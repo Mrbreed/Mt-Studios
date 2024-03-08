@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dalsass Site</title>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+
+    body {
+        font-family: 'Comic Sans MS', cursive, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #cc0000; /* Vermelho escuro */
+        background-image: repeating-linear-gradient(45deg, #ff3333, #ff3333 10px, #cc0000 10px, #cc0000 20px); /* Listras */
+        position: relative; /* Adicionado para permitir o posicionamento absoluto */
+    }
+    .logo {
+        color: white;
+        font-size: 48px;
+        font-family: 'Roboto Condensed', sans-serif;
+        position: absolute;
+        top: 20px;
+        left: 20px; /* Ajustado para mover o texto para a esquerda */
+        z-index: 1; /* Ajustado para garantir que o texto fique acima da imagem */
+    }
+    .line {
+        width: calc(100% - 40px); /* Ajustado para a linha ocupar toda a largura, menos 40px de margem nas laterais */
+        height: 2px;
+        background-color: white;
+        position: absolute;
+        top: 80px; /* Posição ajustada para a linha estar próxima ao título */
+    }
+    .container {
+        text-align: center;
+        margin-top: 120px; /* Ajuste conforme necessário */
+    }
+    .button {
+        padding: 20px 40px;
+        font-size: 24px;
+        font-weight: bold;
+        text-transform: uppercase;
+        background-color: #ff3333; /* Vermelho */
+        color: white;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: all 0.3s ease; /* Transição suave para todas as propriedades */
+        text-decoration: none; /* Remover sublinhado */
+        margin-bottom: 20px; /* Espaçamento entre os botões */
+        display: block; /* Para garantir que cada botão fique em sua própria linha */
+    }
+    .button:hover {
+        background-color: #cc0000; /* Vermelho mais escuro */
+    }
+    .button:hover + .button {
+        margin-top: 5px; /* Aumentar a margem superior do botão seguinte quando o botão atual estiver sendo destacado */
+    }
+    .image-placeholder {
+        position: absolute;
+        top: 0; /* Ajustado para alinhar a imagem com o topo */
+        right: 20px; /* Ajustado para mover a imagem mais para a esquerda */
+        width: 70px; /* Reduzido um pouco mais o tamanho da imagem */
+        height: auto; /* Ajustado para manter a proporção da imagem */
+        z-index: 1; /* Ajustado para garantir que a imagem fique acima da linha */
+    }
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap">
+</head>
+<body>
+<div class="logo">Dalsass Site</div>
+<img src="https://i.postimg.cc/NjMkFTC2/Dalsass.png" alt="Imagem do lado do título" class="image-placeholder">
+<div class="line"></div>
+<div class="container">
+    <a href="file:///C:/Users/Miguel%20Depiblox/Downloads/mod.html" class="button">Mods</a>
+    <a href="#" class="button">Mangá</a>
+    <a href="#" class="button">História</a>
+    <a href="file:///C:/Users/Miguel%20Depiblox/Downloads/perso.html" class="button">Personagens</a>
+</div>
+</body>
+</html>
+
